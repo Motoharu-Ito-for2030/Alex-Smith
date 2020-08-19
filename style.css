@@ -1,0 +1,96 @@
+html {
+  width: 100%;
+  background: rgb(79, 79, 250);
+}
+body {
+  width: 95%;
+  margin: 50px auto;
+  background-color: white;
+  border-radius: 60px;
+  padding: 20px;
+}
+header {
+  position: relative;
+}
+header .alex >h1, header .alex>p{
+  display: inline-block;
+}
+header .alex >h1 {
+  text-align: center;
+  color: white;
+  background-color:  rgb(79, 79, 250);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+
+header .menu >p {
+  position: relative;
+  top: -75px;
+  left: 65%;
+  display: inline-block;
+  margin-right: 12px;
+}
+.menu >p >a{
+  color: rgb(189, 189, 189);
+  text-decoration: none;
+}
+
+main .pro {
+  width: 85%;
+  height: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template: repeat(4, 1fr)/2fr 3fr;
+}
+.pro img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  grid-area: 1 1 1 4;
+  border: 10px solid rgb(228, 225, 225);
+
+}
+.pro h1{
+  font-size: 64px;
+}
+.pro .dr {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  border: 2px solid rgb(209, 202, 202);
+  border-radius: 20px;
+  width: 100px;
+}
+main .do {
+  padding: 20px;
+}
+main .do ul{
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  padding-left: 100px;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  grid-row-gap: 10px;
+}
+ul > li >h1{
+  font-size: 24px;
+}
+ul > li:nth-child(1){
+  list-style-image: url("./writing.jpg");
+  grid-area: 1 1 1 1;
+}
+ul > li:nth-child(2){
+  list-style-image: url("./house.jpg");
+  grid-area: 1 2 1 2;
+}
+ul > li:nth-child(3){
+  list-style-image: url("./pc.jpg");
+  grid-area: 2 1 2 1;
+  
+}
+ul > li:nth-child(4){
+  list-style-image: url("./mega.jpg");
+  grid-area: 2 2 2 2;
+}
